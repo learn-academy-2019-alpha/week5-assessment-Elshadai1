@@ -8,7 +8,16 @@
 #hello_world("es") should return "Hola Mundo"
 #hello_world("de") should return "Hallo Welt"
 
+def hello_world (code)
+  if code == "es"
+    code = "Hola Mundo"
+  elsif code == 'de'
+    code = "Hallo Welt"
+  elsif code == "en"
+    code = 'Hello World'
+end
 
+p hello_world "es"
 
 # The Grade Assigner
 # Write a Method named assign_grade that:
@@ -18,6 +27,23 @@
 # assign_grade(90) should return A
 # assign_grade(75) should return C
 
+#def grade_assigner num
+
+  #if num >= 90 && num <= 100
+  #    "A"
+  #elsif num >= 80 && num <= 90
+  #      "B"
+  #elsif num >= 70 && num <= 80
+  #      "C"
+  #elsif num >= 60 && num <= 70
+  #      "D"
+  #elsif num < 60
+  #      "E"
+  #end
+
+#end
+
+#p grade_assigner 75
 
 # The Pluralizer
 # Write a method named pluralizer that:
@@ -28,4 +54,20 @@
 # pluralizer(1, dog) should return "1 dog" because the number one does not require a plural noun
 # Arguments will always be a number and a singular noun.
 
-# Bonus: Make it handle a few collective nouns like "sheep", "geese", "children", "people" and "species".
+#def pluralizer noun, name
+
+    #if noun == "sheep" || noun == "geese" || noun == "species"
+    #  "#{num} #{noun}"
+    #elsif noun == "children" && num == 1
+    #  "#{num} child"
+    #elsif noun == "child" && num > 1
+    #  "#{num} children"
+    #elsif noun == "people" && num == 1
+    #  "#{num} person"
+    #elsif noun =="person" && num > 1
+    #  "#{num} people"
+    #elsif num == 1
+    #  "#{num} #{noun}"
+    #elsif num > 1
+    #  "#{num} #{noun}s"
+    #end
